@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+
+/* Editor container with fixed height and scrolling */
+.editor-container {
+  height: 400px;  /* Set a fixed height for the editor */
+  width: 100%;    /* Make it full width */
+  border: 1px solid #ddd;
+  overflow-y: auto;  /* Enable vertical scrolling */
+  overflow-x: hidden;  /* Hide horizontal scroll */
+}
+
+/* Spinning animation for the loading spinner */
+.rotating-spinner {
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Keyframes for spinner animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.paste-btn {
+  z-index: 10;
+  padding: 5px 10px;
+  font-size: 14px;
+}
